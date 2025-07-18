@@ -1,5 +1,8 @@
 import { Heart, Award, Users, Globe, Star } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import judyPortrait from '@/assets/judy-portrait.jpg';
+import judyStudying from '@/assets/judy-studying.jpg';
+import judySuccess from '@/assets/judy-success.jpg';
 
 const About = () => {
   return (
@@ -32,7 +35,28 @@ const About = () => {
             </p>
           </div>
           <div className="relative">
-            <div className="w-full h-96 gradient-card rounded-2xl shadow-[var(--shadow-card)]"></div>
+            <div className="image-frame w-full h-96 bg-cover bg-center" style={{ backgroundImage: `url(${judyPortrait})` }}>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10"></div>
+            </div>
+          </div>
+        </div>
+
+        
+        {/* Photo Gallery */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+          <div className="image-frame h-64 bg-cover bg-center" style={{ backgroundImage: `url(${judyStudying})` }}>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+            <div className="absolute bottom-4 left-4 text-white">
+              <h3 className="font-semibold">Always Learning</h3>
+              <p className="text-sm opacity-90">Continuous education is key to success</p>
+            </div>
+          </div>
+          <div className="image-frame h-64 bg-cover bg-center" style={{ backgroundImage: `url(${judySuccess})` }}>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+            <div className="absolute bottom-4 left-4 text-white">
+              <h3 className="font-semibold">Celebrating Success</h3>
+              <p className="text-sm opacity-90">Every achievement matters</p>
+            </div>
           </div>
         </div>
 

@@ -2,6 +2,7 @@ import { CheckCircle, Globe, Users, FileText, Video, Heart, Clock, Star } from '
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import judyPortrait from '@/assets/judy-portrait.jpg';
 
 const Services = () => {
   const services = [
@@ -208,29 +209,34 @@ const Services = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-20 text-center">
-        <Card className="card-elegant p-8 gradient-card">
-          <CardContent className="space-y-6">
-            <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground">
-              Ready to Start Your Journey?
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Book a consultation today and let's create your personalized path to international nursing success
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact">
-                <Button size="lg" className="btn-primary">
-                  Book Consultation
-                </Button>
-              </Link>
-              <Link to="/contact">
-                <Button size="lg" variant="outline">
-                  Ask Questions
-                </Button>
-              </Link>
+      {/* CTA Section with Judy's Photo */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
+        <Card className="card-elegant overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-2">
+            <div className="image-frame h-full min-h-[300px] bg-cover bg-center lg:rounded-r-none" style={{ backgroundImage: `url(${judyPortrait})` }}>
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20"></div>
             </div>
-          </CardContent>
+            <CardContent className="p-8 flex flex-col justify-center">
+              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mb-4">
+                Ready to Start Your Journey?
+              </h2>
+              <p className="text-lg text-muted-foreground mb-6">
+                Book a consultation today and let's create your personalized path to international nursing success
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link to="/contact">
+                  <Button size="lg" className="btn-primary">
+                    Book Consultation
+                  </Button>
+                </Link>
+                <Link to="/contact">
+                  <Button size="lg" variant="outline">
+                    Ask Questions
+                  </Button>
+                </Link>
+              </div>
+            </CardContent>
+          </div>
         </Card>
       </section>
     </div>

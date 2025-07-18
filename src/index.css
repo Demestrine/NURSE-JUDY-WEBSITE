@@ -7,50 +7,52 @@
 
 @layer base {
   :root {
-    /* Core brand colors - girly and soft */
-    --background: 330 25% 98%;
-    --foreground: 340 15% 20%;
+    /* Core brand colors - bright, fun and super girly */
+    --background: 320 35% 97%;
+    --foreground: 340 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 340 15% 20%;
+    --card-foreground: 340 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 340 15% 20%;
+    --popover-foreground: 340 25% 15%;
 
-    /* Primary: Soft pink - feminine and caring */
-    --primary: 330 65% 65%;
+    /* Primary: Hot pink - vibrant and energetic */
+    --primary: 320 85% 60%;
     --primary-foreground: 0 0% 100%;
-    --primary-soft: 330 45% 90%;
+    --primary-soft: 320 60% 92%;
 
-    /* Secondary: Lavender purple - dreamy and elegant */
-    --secondary: 280 45% 85%;
-    --secondary-foreground: 340 15% 20%;
-    --secondary-vibrant: 280 55% 70%;
+    /* Secondary: Bright coral - fun and lively */
+    --secondary: 10 90% 75%;
+    --secondary-foreground: 340 25% 15%;
+    --secondary-vibrant: 10 85% 65%;
 
-    /* Accent: Rose gold - luxury and warmth */
-    --accent: 15 45% 80%;
-    --accent-foreground: 340 15% 20%;
-    --accent-deep: 15 55% 65%;
+    /* Accent: Electric purple - playful and bold */
+    --accent: 280 80% 70%;
+    --accent-foreground: 0 0% 100%;
+    --accent-deep: 280 75% 60%;
 
-    --muted: 330 15% 94%;
-    --muted-foreground: 340 10% 55%;
+    --muted: 320 25% 93%;
+    --muted-foreground: 340 15% 50%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 330 15% 88%;
-    --input: 330 15% 92%;
-    --ring: 330 65% 65%;
+    --border: 320 20% 85%;
+    --input: 320 20% 90%;
+    --ring: 320 85% 60%;
 
-    /* Design system gradients - girly and dreamy */
-    --gradient-hero: linear-gradient(135deg, hsl(330 65% 65%), hsl(280 55% 70%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(330 25% 98%));
-    --gradient-accent: linear-gradient(90deg, hsl(15 55% 65%), hsl(330 45% 65%));
+    /* Design system gradients - bright and playful */
+    --gradient-hero: linear-gradient(135deg, hsl(320 85% 60%), hsl(280 80% 70%), hsl(10 85% 65%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(320 35% 97%));
+    --gradient-accent: linear-gradient(90deg, hsl(280 75% 60%), hsl(320 80% 65%));
+    --gradient-fun: linear-gradient(45deg, hsl(320 85% 60%), hsl(10 90% 70%), hsl(280 80% 70%));
     
-    /* Shadows for depth - soft and dreamy */
-    --shadow-soft: 0 4px 20px hsl(330 30% 15% / 0.08);
-    --shadow-card: 0 8px 30px hsl(330 20% 20% / 0.12);
-    --shadow-button: 0 4px 15px hsl(330 65% 65% / 0.25);
+    /* Shadows for depth - colorful and fun */
+    --shadow-soft: 0 4px 20px hsl(320 40% 20% / 0.10);
+    --shadow-card: 0 8px 30px hsl(320 30% 25% / 0.15);
+    --shadow-button: 0 4px 15px hsl(320 85% 60% / 0.35);
+    --shadow-fun: 0 10px 40px hsl(280 60% 50% / 0.25);
 
     --radius: 0.5rem;
 
@@ -138,8 +140,8 @@
     background: var(--gradient-hero);
   }
   
-  .gradient-card {
-    background: var(--gradient-card);
+  .gradient-fun {
+    background: var(--gradient-fun);
   }
   
   .text-gradient {
@@ -147,5 +149,14 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  .image-frame {
+    @apply relative overflow-hidden rounded-2xl shadow-[var(--shadow-fun)] border-4 border-white transform hover:scale-105 transition-all duration-300;
+  }
+
+  .image-frame::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/20 pointer-events-none;
   }
 }

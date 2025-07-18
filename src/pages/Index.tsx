@@ -91,7 +91,14 @@ const Index = () => {
               </Link>
             </div>
             <div className="relative">
-              <div className="w-full h-96 gradient-card rounded-2xl shadow-[var(--shadow-card)]"></div>
+              <div className="image-frame w-full h-96 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                <div className="text-center space-y-4">
+                  <div className="w-24 h-24 gradient-fun rounded-full mx-auto flex items-center justify-center text-white text-2xl font-bold">
+                    JN
+                  </div>
+                  <p className="text-muted-foreground font-medium">Judy's Photo Coming Soon!</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

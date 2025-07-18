@@ -7,6 +7,7 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
+import judyPortrait from '@/assets/judy-portrait.jpg';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -230,38 +231,38 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Map or Additional Info Section */}
+        {/* Featured Section with Judy's Photo */}
         <div className="mt-20">
-          <Card className="card-elegant">
-            <CardContent className="p-8">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div>
-                  <h2 className="font-playfair text-3xl font-bold text-foreground mb-4">
-                    Ready to Start Your Journey?
-                  </h2>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
-                    Every successful nurse's international journey starts with a single conversation. 
-                    I'm here to listen, understand your unique situation, and create a personalized 
-                    roadmap to help you achieve your dreams.
-                  </p>
-                  <div className="space-y-3 text-sm">
-                    <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span>Personalized consultation within 48 hours</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span>No obligation - just honest advice</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span>Flexible scheduling to fit your timezone</span>
-                    </div>
+          <Card className="card-elegant overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+              <div className="order-2 lg:order-1 p-8 flex flex-col justify-center">
+                <h2 className="font-playfair text-3xl font-bold text-foreground mb-4">
+                  Ready to Start Your Journey?
+                </h2>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Every successful nurse's international journey starts with a single conversation. 
+                  I'm here to listen, understand your unique situation, and create a personalized 
+                  roadmap to help you achieve your dreams.
+                </p>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <span>Personalized consultation within 48 hours</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <span>No obligation - just honest advice</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <span>Flexible scheduling to fit your timezone</span>
                   </div>
                 </div>
-                <div className="h-64 gradient-card rounded-xl"></div>
               </div>
-            </CardContent>
+              <div className="order-1 lg:order-2 image-frame h-80 lg:h-auto bg-cover bg-center lg:rounded-l-none" style={{ backgroundImage: `url(${judyPortrait})` }}>
+                <div className="absolute inset-0 bg-gradient-to-l from-transparent to-primary/10"></div>
+              </div>
+            </div>
           </Card>
         </div>
       </div>
