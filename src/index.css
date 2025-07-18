@@ -2,39 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Nurse Judy Design System - Warm, Professional, Caring */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core brand colors - warm and professional */
+    --background: 25 25% 98%;
+    --foreground: 220 15% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 15% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 15% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Soft teal - medical trust */
+    --primary: 185 65% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-soft: 185 45% 85%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Warm coral - caring warmth */
+    --secondary: 15 75% 85%;
+    --secondary-foreground: 220 15% 20%;
+    --secondary-vibrant: 15 65% 65%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Accent: Sage green - growth and healing */
+    --accent: 140 35% 75%;
+    --accent-foreground: 220 15% 20%;
+    --accent-deep: 140 45% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 25 15% 94%;
+    --muted-foreground: 220 10% 55%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 25 15% 88%;
+    --input: 25 15% 92%;
+    --ring: 185 65% 45%;
+
+    /* Design system gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(185 65% 45%), hsl(15 65% 65%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(25 25% 98%));
+    --gradient-accent: linear-gradient(90deg, hsl(140 45% 55%), hsl(185 45% 55%));
+    
+    /* Shadows for depth */
+    --shadow-soft: 0 4px 20px hsl(185 30% 15% / 0.08);
+    --shadow-card: 0 8px 30px hsl(185 20% 20% / 0.12);
+    --shadow-button: 0 4px 15px hsl(185 65% 45% / 0.25);
 
     --radius: 0.5rem;
 
@@ -100,6 +116,36 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+  }
+}
+
+@layer components {
+  /* Custom component styles using design system */
+  .btn-primary {
+    @apply bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-[var(--shadow-button)] hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-[hsl(var(--secondary-vibrant))] hover:scale-105;
+  }
+  
+  .card-elegant {
+    @apply bg-card rounded-xl shadow-[var(--shadow-card)] border border-border/50 transition-all duration-300 hover:shadow-[var(--shadow-card)] hover:-translate-y-1;
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .text-gradient {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
