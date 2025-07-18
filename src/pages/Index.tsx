@@ -26,7 +26,7 @@ const Index = () => {
             Hi, I'm Judy! I help passionate Kenyan nurses achieve their dreams of working internationally through personalized consultations and expert guidance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/booking">
+            <Link to="/services">
               <Button size="lg" className="btn-primary text-lg px-8 py-4">
                 Book Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -159,7 +159,7 @@ const Index = () => {
           <p className="text-xl mb-8 opacity-90">
             Book a consultation today and take the first step towards your international nursing career
           </p>
-          <Link to="/booking">
+          <Link to="/services">
             <Button size="lg" className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4">
               Book Your Consultation
               <ArrowRight className="ml-2 w-5 h-5" />

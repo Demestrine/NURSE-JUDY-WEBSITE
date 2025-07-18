@@ -166,7 +166,7 @@ const Services = () => {
                   ))}
                 </ul>
                 
-                <Link to="/booking" className="block">
+                <Link to="/contact" className="block">
                   <Button 
                     className={`w-full ${service.bestValue ? 'btn-secondary' : 'btn-primary'}`}
                   >
@@ -219,7 +219,7 @@ const Services = () => {
               Book a consultation today and let's create your personalized path to international nursing success
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/booking">
+              <Link to="/contact">
                 <Button size="lg" className="btn-primary">
                   Book Consultation
                 </Button>
