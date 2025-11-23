@@ -10,9 +10,7 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      <p>NURSE JUDY KE - Advance your Nursing path with me</p>
-      <p>(00) 123 456 7890</p>
-      
+
       <div className="social-icons">
         {socialLinks.map((link, index) => (
           <a key={index} href={link.url} target="_blank" rel="noopener noreferrer">
