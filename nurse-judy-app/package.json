@@ -1,0 +1,7 @@
+{
+  "name": "judys-global-care",
+  "private": true,
+  "scripts": {
+    "build": "cd nurse-judy-app && npm run build"
+  }
+}
