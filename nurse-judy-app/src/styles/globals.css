@@ -22,6 +22,113 @@ body {
     overflow-x: hidden;
 }
 
+/* ===== ONLY THE REQUESTED FIXES ===== */
+
+/* 1. Remove Welcome banner completely */
+.auth-section {
+  display: none !important;
+}
+
+/* 2. Remove Nurse Judy logo completely */
+.logo {
+  display: none !important;
+}
+
+/* 3. Distribute navigation equally on desktop and keep horizontal on mobile */
+.main-nav {
+  display: flex;
+  justify-content: space-between; /* Distribute space equally */
+  align-items: center;
+  padding: 20px 5%;
+  border-bottom: transparent;
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  width: 100%; /* Take full width */
+  justify-content: space-between; /* Distribute items equally */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  flex: 1; /* Each item takes equal space */
+  text-align: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 8px 5px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+.nav-links li a:hover {
+  color: #999;
+}
+
+.nav-links li a.active {
+  color: var(--accent-color);
+}
+
+/* 4. Fix mobile menu to stay horizontal */
+@media (max-width: 768px) {
+  .main-nav {
+    padding: 15px 5%;
+    justify-content: center;
+    overflow-x: auto;
+  }
+
+  .nav-links {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start; /* Align to start for scrolling */
+    gap: 0;
+  }
+
+  .nav-links li {
+    flex: 0 0 auto; /* Don't grow/shrink, use auto width */
+    text-align: center;
+    margin: 0;
+  }
+
+  .nav-links li a {
+    padding: 8px 12px;
+    font-size: 11px;
+    white-space: nowrap;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 4px;
+    margin: 0 2px;
+  }
+
+  /* Hide hamburger since we're showing all items */
+  .hamburger {
+    display: none;
+  }
+}
+
+/* 5. Fix overlapping issues */
+.main-header {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
 /* Utility Classes */
 .section-tag {
     font-size: 11px;
@@ -257,47 +364,6 @@ h2 {
     justify-content: flex-end;
 }
 .top-bar-left { margin-right: auto; }
-
-.main-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    border-bottom: transparent;
-    background-color: transparent;
-    position: relative;
-}
-
-.logo {
-    font-family: var(--primary-font);
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: var(--text-color);
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li a {
-    text-decoration: none;
-    color: var(--text-color);
-    padding: 0 15px;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    transition: color 0.3s;
-    cursor: pointer;
-}
-.nav-links li a:hover {
-    color: #999;
-}
-
-.nav-links li a.active {
-    color: var(--accent-color);
-}
 
 .nav-icons {
     font-size: 16px;

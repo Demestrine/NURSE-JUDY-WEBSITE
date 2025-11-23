@@ -21,14 +21,11 @@ const Header = ({ activeSection, setActiveSection }) => {
 
   return (
     <header className="main-header">
-      {/* Simple top bar without auth */}
-      <div className="auth-section">
-        <span>Welcome to Nurse Judy's Global Care</span>
-      </div>
+      {/* REMOVED: Welcome banner completely */}
 
       {/* Main Navigation */}
       <nav className="main-nav">
-        <h1 className="logo">NURSE JUDY</h1>
+        {/* REMOVED: Nurse Judy logo completely */}
 
         <div className="hamburger" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
           <i className="fas fa-bars"></i>
