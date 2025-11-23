@@ -28,7 +28,7 @@ const Header = ({ activeSection, setActiveSection }) => {
 
       {/* Main Navigation */}
       <nav className="main-nav">
-        <h1 className="logo"></h1>
+        <h1 className="logo">NURSE JUDY</h1>
 
         <div className="hamburger" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
           <i className="fas fa-bars"></i>
