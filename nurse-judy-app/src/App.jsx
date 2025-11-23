@@ -9,7 +9,6 @@ import Events from './pages/Events'
 import GivebackCircle from './pages/GivebackCircle'
 import About from './pages/About'
 import Footer from './components/Footer/Footer'
-import { AuthProvider } from './hooks/useAuth.jsx'
 import './styles/global.css'
 
 function App() {
@@ -39,15 +38,13 @@ function App() {
   }
 
   return (
-    <AuthProvider>
-      <div className="app">
-        <Header activeSection={activeSection} setActiveSection={setActiveSection} />
-        <main>
-          {renderSection()}
-        </main>
-        <Footer />
-      </div>
-    </AuthProvider>
+    <div className="app">
+      <Header activeSection={activeSection} setActiveSection={setActiveSection} />
+      <main>
+        {renderSection()}
+      </main>
+      <Footer />
+    </div>
   )
 }
 
