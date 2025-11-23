@@ -1,0 +1,44 @@
+0 verbose cli C:\Users\Administrator\.nvm\versions\node\v22.18.0\bin\node.exe C:\Users\Administrator\.nvm\versions\node\v22.18.0\bin\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.3
+2 info using node@v22.18.0
+3 silly config load:file:C:\Users\Administrator\.nvm\versions\node\v22.18.0\bin\node_modules\npm\npmrc
+4 silly config load:file:C:\Program Files\Git\judys-global-care\.npmrc
+5 silly config load:file:C:\Users\Administrator\.npmrc
+6 silly config load:file:C:\Users\Administrator\.nvm\versions\node\v22.18.0\bin\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install"
+9 verbose logfile logs-max:10 dir:C:\Program Files\Git\judys-global-care\npm-cache\_logs\2025-11-23T22_54_01_891Z-
+10 verbose logfile C:\Program Files\Git\judys-global-care\npm-cache\_logs\2025-11-23T22_54_01_891Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly reify moves {}
+16 silly audit bulk request {
+16 silly audit   autoprefixer: [ '10.4.22' ],
+16 silly audit   'baseline-browser-mapping': [ '2.8.30' ],
+16 silly audit   browserslist: [ '4.28.0' ],
+16 silly audit   'caniuse-lite': [ '1.0.30001756' ],
+16 silly audit   'electron-to-chromium': [ '1.5.259' ],
+16 silly audit   escalade: [ '3.2.0' ],
+16 silly audit   'fraction.js': [ '5.3.4' ],
+16 silly audit   'lucide-react': [ '0.554.0' ],
+16 silly audit   nanoid: [ '3.3.11' ],
+16 silly audit   'node-releases': [ '2.0.27' ],
+16 silly audit   'normalize-range': [ '0.1.2' ],
+16 silly audit   picocolors: [ '1.1.1' ],
+16 silly audit   postcss: [ '8.5.6' ],
+16 silly audit   'postcss-value-parser': [ '4.2.0' ],
+16 silly audit   react: [ '19.2.0' ],
+16 silly audit   'source-map-js': [ '1.2.1' ],
+16 silly audit   tailwindcss: [ '4.1.17' ],
+16 silly audit   'update-browserslist-db': [ '1.1.4' ]
+16 silly audit }
+17 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 1738ms
+18 silly audit report {}
+19 verbose cwd C:\Program Files\Git\judys-global-care
+20 verbose os Windows_NT 10.0.19045
+21 verbose node v22.18.0
+22 verbose npm  v10.9.3
+23 verbose exit 0
+24 info ok
