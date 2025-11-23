@@ -1,0 +1,210 @@
+/* --- NEW: Scrollable Image Cards Section --- */
+.scrollable-cards-section {
+    padding: 80px 5%;
+    background-color: var(--light-bg);
+    overflow: hidden;
+}
+
+.scrollable-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    gap: 30px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.scrollable-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
+.scrollable-card {
+    flex: 0 0 300px;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.scrollable-card.active {
+    flex: 0 0 450px;
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.scrollable-card-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.scrollable-card:hover .scrollable-card-image {
+    transform: scale(1.1);
+}
+
+.scrollable-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+    padding: 30px 20px 20px;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.scrollable-card:hover .scrollable-card-content {
+    transform: translateY(-5px);
+}
+
+.scrollable-card p {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    opacity: 0.8;
+}
+
+.scrollable-card h4 {
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.scroll-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.scroll-btn {
+    background-color: #000;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.scroll-btn:hover {
+    background-color: #333;
+}
+
+.category-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.category-intro h2 {
+    font-family: var(--secondary-font);
+    font-size: 90px;
+    font-weight: 900;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
+
+.category-intro p {
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .scrollable-card {
+        flex: 0 0 250px;
+        height: 350px;
+    }
+    
+    .scrollable-card.active {
+        flex: 0 0 350px;
+    }
+    
+    .category-intro h2 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .scrollable-card {
+        flex: 0 0 200px;
+        height: 300px;
+    }
+    
+    .scrollable-card.active {
+        flex: 0 0 280px;
+    }
+    
+    .category-intro h2 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .scrollable-card {
+        flex: 0 0 180px;
+        height: 250px;
+    }
+    
+    .scrollable-card.active {
+        flex: 0 0 220px;
+    }
+    
+    .scrollable-card h4 {
+        font-size: 18px;
+    }
+    
+    .category-intro h2 {
+        font-size: 40px;
+    }
+}

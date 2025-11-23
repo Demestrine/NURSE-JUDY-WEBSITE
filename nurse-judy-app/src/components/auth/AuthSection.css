@@ -1,0 +1,20 @@
+.auth-section {
+  background-color: white;
+  color: rgb(241, 7, 144);
+  padding: 8px 5%;
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.auth-section a {
+  color: rgb(241, 7, 144);
+  text-decoration: none;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.auth-section a:hover {
+  color: var(--accent-color);
+}

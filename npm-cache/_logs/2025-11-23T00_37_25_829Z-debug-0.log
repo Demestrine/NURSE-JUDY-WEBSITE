@@ -1,0 +1,21 @@
+0 verbose cli C:\Users\Administrator\.nvm\versions\node\v22.18.0\bin\node.exe C:\Users\Administrator\.nvm\versions\node\v22.18.0\bin\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.3
+2 info using node@v22.18.0
+3 silly config load:file:C:\Users\Administrator\.nvm\versions\node\v22.18.0\bin\node_modules\npm\npmrc
+4 silly config load:file:C:\Program Files\Git\judys-global-care\.npmrc
+5 silly config load:file:C:\Users\Administrator\.npmrc
+6 silly config load:file:C:\Users\Administrator\.nvm\versions\node\v22.18.0\bin\etc\npmrc
+7 verbose title npm create vite@latest nurse-judy-website --template react
+8 verbose argv "create" "vite@latest" "nurse-judy-website" "--" "--template" "react"
+9 verbose logfile logs-max:10 dir:C:\Program Files\Git\judys-global-care\npm-cache\_logs\2025-11-23T00_37_25_829Z-
+10 verbose logfile C:\Program Files\Git\judys-global-care\npm-cache\_logs\2025-11-23T00_37_25_829Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 http fetch GET 200 https://registry.npmjs.org/create-vite 804ms (cache revalidated)
+14 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+15 verbose cwd C:\Program Files\Git\judys-global-care
+16 verbose os Windows_NT 10.0.19045
+17 verbose node v22.18.0
+18 verbose npm  v10.9.3
+19 verbose exit 0
+20 info ok

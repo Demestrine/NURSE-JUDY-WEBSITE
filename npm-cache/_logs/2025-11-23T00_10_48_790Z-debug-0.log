@@ -1,0 +1,18 @@
+0 verbose cli C:\Users\Administrator\.nvm\versions\node\v22.18.0\bin\node.exe C:\Users\Administrator\.nvm\versions\node\v22.18.0\bin\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.3
+2 info using node@v22.18.0
+3 silly config load:file:C:\Users\Administrator\.nvm\versions\node\v22.18.0\bin\node_modules\npm\npmrc
+4 silly config load:file:C:\Program Files\Git\judys-global-care\.npmrc
+5 silly config load:file:C:\Users\Administrator\.npmrc
+6 silly config load:file:C:\Users\Administrator\.nvm\versions\node\v22.18.0\bin\etc\npmrc
+7 verbose title npm run dev
+8 verbose argv "run" "dev"
+9 verbose logfile logs-max:10 dir:C:\Program Files\Git\judys-global-care\npm-cache\_logs\2025-11-23T00_10_48_790Z-
+10 verbose logfile C:\Program Files\Git\judys-global-care\npm-cache\_logs\2025-11-23T00_10_48_790Z-debug-0.log
+11 silly logfile done cleaning log files
+12 verbose cwd C:\Program Files\Git\judys-global-care
+13 verbose os Windows_NT 10.0.19045
+14 verbose node v22.18.0
+15 verbose npm  v10.9.3
+16 verbose exit 1
+17 verbose code 1

@@ -1,0 +1,127 @@
+.hero-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 120px 5% 80px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Image as centered background */
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/hero/njk11.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+/* Overlay to make text more readable */
+.hero-banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 2;
+}
+
+.banner-content {
+  max-width: 800px;
+  position: relative;
+  z-index: 3;
+}
+
+.banner-content h2 {
+  font-size: 90px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: rgb(241, 7, 144);
+  font-family: 'Playfair Display', serif;
+}
+
+.description {
+  font-size: 1.4rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 50px;
+  font-weight: 300;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+  z-index: 3;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(241, 7, 144);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+/* Simple responsive design */
+@media (max-width: 768px) {
+  .hero-banner {
+    padding: 100px 5% 60px;
+  }
+
+  .banner-content h2 {
+    font-size: 3.5rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+
+  .hero-stats {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-content h2 {
+    font-size: 2.8rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 25px;
+  }
+}

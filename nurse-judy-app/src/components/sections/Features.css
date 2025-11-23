@@ -1,0 +1,50 @@
+/* --- Features Section (4 Columns) --- */
+.features-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 5%;
+    text-align: center;
+    border-bottom: 1px solid white;
+    background-color: #fff;
+}
+
+.feature-item {
+    width: 20%;
+}
+
+.feature-item .icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+    display: block;
+    color: rgb(241, 7, 144);
+}
+
+.feature-item h3 {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 13px;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .features-section {
+        flex-wrap: wrap;
+    }
+    
+    .feature-item {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-item {
+        width: 100%;
+    }
+}

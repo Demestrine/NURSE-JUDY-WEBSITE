@@ -1,0 +1,93 @@
+:root {
+  --primary-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Playfair Display', serif;
+  --text-color: #333;
+  --light-bg: #f8f8f8;
+  --accent-color: rgb(241, 7, 144);
+  --main-padding: 0 5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  line-height: 1.6;
+  background-color: transparent;
+  overflow-x: hidden;
+}
+
+.section-tag {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-family: var(--secondary-font);
+  font-size: 90px;
+  font-weight: 900;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+/* Animation Classes */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 40px;
+  }
+}

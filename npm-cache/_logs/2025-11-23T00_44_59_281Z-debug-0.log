@@ -1,0 +1,140 @@
+0 verbose cli C:\Users\Administrator\.nvm\versions\node\v22.18.0\bin\node.exe C:\Users\Administrator\.nvm\versions\node\v22.18.0\bin\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.3
+2 info using node@v22.18.0
+3 silly config load:file:C:\Users\Administrator\.nvm\versions\node\v22.18.0\bin\node_modules\npm\npmrc
+4 silly config load:file:C:\Program Files\Git\judys-global-care\.npmrc
+5 silly config load:file:C:\Users\Administrator\.npmrc
+6 silly config load:file:C:\Users\Administrator\.nvm\versions\node\v22.18.0\bin\etc\npmrc
+7 verbose title npm install lucide-react
+8 verbose argv "install" "lucide-react"
+9 verbose logfile logs-max:10 dir:C:\Program Files\Git\judys-global-care\npm-cache\_logs\2025-11-23T00_44_59_281Z-
+10 verbose logfile C:\Program Files\Git\judys-global-care\npm-cache\_logs\2025-11-23T00_44_59_281Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly idealTree buildDeps
+14 silly fetch manifest lucide-react@*
+15 silly packumentCache full:https://registry.npmjs.org/lucide-react cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/lucide-react 760ms (cache revalidated)
+17 silly packumentCache full:https://registry.npmjs.org/lucide-react set size:2120270 disposed:false
+18 silly fetch manifest react@^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+19 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/react 673ms (cache revalidated)
+21 silly packumentCache full:https://registry.npmjs.org/react set size:6283882 disposed:false
+22 silly placeDep ROOT lucide-react@0.554.0 REPLACE for:  want: *
+23 silly reify mark retired [
+23 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\autoprefixer',
+23 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\autoprefixer',
+23 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\autoprefixer.cmd',
+23 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\autoprefixer.ps1'
+23 silly reify ]
+24 silly reify mark retired [
+24 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\baseline-browser-mapping',
+24 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\baseline-browser-mapping',
+24 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\baseline-browser-mapping.cmd',
+24 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\baseline-browser-mapping.ps1'
+24 silly reify ]
+25 silly reify mark retired [
+25 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\browserslist',
+25 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\browserslist',
+25 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\browserslist.cmd',
+25 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\browserslist.ps1'
+25 silly reify ]
+26 silly reify mark retired [
+26 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\caniuse-lite'
+26 silly reify ]
+27 silly reify mark retired [
+27 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\electron-to-chromium'
+27 silly reify ]
+28 silly reify mark retired [ 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\escalade' ]
+29 silly reify mark retired [
+29 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\fraction.js'
+29 silly reify ]
+30 silly reify mark retired [
+30 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\nanoid',
+30 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\nanoid',
+30 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\nanoid.cmd',
+30 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\nanoid.ps1'
+30 silly reify ]
+31 silly reify mark retired [
+31 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\node-releases'
+31 silly reify ]
+32 silly reify mark retired [
+32 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\normalize-range'
+32 silly reify ]
+33 silly reify mark retired [
+33 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\picocolors'
+33 silly reify ]
+34 silly reify mark retired [ 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\postcss' ]
+35 silly reify mark retired [
+35 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\postcss-value-parser'
+35 silly reify ]
+36 silly reify mark retired [
+36 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\source-map-js'
+36 silly reify ]
+37 silly reify mark retired [
+37 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\tailwindcss'
+37 silly reify ]
+38 silly reify mark retired [
+38 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\update-browserslist-db',
+38 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\update-browserslist-db',
+38 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\update-browserslist-db.cmd',
+38 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\update-browserslist-db.ps1'
+38 silly reify ]
+39 silly reify moves {
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\autoprefixer': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.autoprefixer-B3XaXq5h',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\autoprefixer': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\.autoprefixer-xjbAVNjh',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\autoprefixer.cmd': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\.autoprefixer.cmd-dH5D7qZG',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\autoprefixer.ps1': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\.autoprefixer.ps1-7MbzfqGw',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\baseline-browser-mapping': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.baseline-browser-mapping-U9dbKXFn',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\baseline-browser-mapping': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\.baseline-browser-mapping-Geb6iau0',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\baseline-browser-mapping.cmd': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\.baseline-browser-mapping.cmd-Co6M9Aoc',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\baseline-browser-mapping.ps1': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\.baseline-browser-mapping.ps1-GdPhX4OG',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\browserslist': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.browserslist-X08WGMwC',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\browserslist': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\.browserslist-QGQS15yn',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\browserslist.cmd': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\.browserslist.cmd-mJYeUC9f',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\browserslist.ps1': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\.browserslist.ps1-cqee784c',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\caniuse-lite': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.caniuse-lite-rihSpThh',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\electron-to-chromium': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.electron-to-chromium-kuDYg2ra',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\escalade': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.escalade-PYnpyLct',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\fraction.js': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.fraction.js-LPdSgiLq',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\nanoid': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.nanoid-OPG7Zpp3',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\nanoid': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\.nanoid-zxgENvOU',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\nanoid.cmd': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\.nanoid.cmd-UGtCTvQ9',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\nanoid.ps1': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\.nanoid.ps1-9LYTeVHt',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\node-releases': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.node-releases-oFxpYcFT',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\normalize-range': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.normalize-range-KEcOK26k',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\picocolors': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.picocolors-ZgLewymL',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\postcss': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.postcss-gwHS7r6o',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\postcss-value-parser': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.postcss-value-parser-36iheKjK',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\source-map-js': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.source-map-js-ZujSC44k',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\tailwindcss': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.tailwindcss-ZAK3aBIr',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\update-browserslist-db': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.update-browserslist-db-vKXDi44f',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\update-browserslist-db': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\.update-browserslist-db-JZBYGK74',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\update-browserslist-db.cmd': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\.update-browserslist-db.cmd-ekApOqAr',
+39 silly reify   'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\update-browserslist-db.ps1': 'C:\\Program Files\\Git\\judys-global-care\\node_modules\\.bin\\.update-browserslist-db.ps1-HZlsQL1R'
+39 silly reify }
+40 silly audit bulk request { react: [ '19.2.0' ], 'lucide-react': [ '0.554.0' ] }
+41 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 6326ms
+42 silly audit report {}
+43 silly REMOVE node_modules/update-browserslist-db
+44 silly REMOVE node_modules/tailwindcss
+45 silly REMOVE node_modules/source-map-js
+46 silly REMOVE node_modules/postcss-value-parser
+47 silly REMOVE node_modules/postcss
+48 silly REMOVE node_modules/picocolors
+49 silly REMOVE node_modules/normalize-range
+50 silly REMOVE node_modules/node-releases
+51 silly REMOVE node_modules/nanoid
+52 silly REMOVE node_modules/fraction.js
+53 silly REMOVE node_modules/escalade
+54 silly REMOVE node_modules/electron-to-chromium
+55 silly REMOVE node_modules/caniuse-lite
+56 silly REMOVE node_modules/browserslist
+57 silly REMOVE node_modules/baseline-browser-mapping
+58 silly REMOVE node_modules/autoprefixer
+59 verbose cwd C:\Program Files\Git\judys-global-care
+60 verbose os Windows_NT 10.0.19045
+61 verbose node v22.18.0
+62 verbose npm  v10.9.3
+63 verbose exit 0
+64 info ok

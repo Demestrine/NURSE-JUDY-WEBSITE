@@ -1,0 +1,29 @@
+.user-welcome {
+  display: none;
+  background-color: white;
+  color: rgb(241, 7, 144);
+  padding: 8px 5%;
+  font-size: 12px;
+  justify-content: flex-end;
+  gap: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.user-welcome.active {
+  display: flex;
+}
+
+.notification-badge {
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}

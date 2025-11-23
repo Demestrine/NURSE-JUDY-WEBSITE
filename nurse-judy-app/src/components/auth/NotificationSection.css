@@ -1,0 +1,49 @@
+.notification-section {
+  display: none;
+  position: fixed;
+  top: 40px;
+  right: 5%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+  width: 300px;
+  z-index: 100;
+  padding: 20px;
+}
+
+.notification-section.active {
+  display: block;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.notification-header h3 {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.notification-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-item p {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.notification-date {
+  font-size: 11px;
+  color: #888;
+}

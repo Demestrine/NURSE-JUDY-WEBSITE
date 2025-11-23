@@ -1,0 +1,396 @@
+.giveback-page {
+  font-family: var(--primary-font);
+  color: var(--text-color);
+}
+
+/* Hero Section */
+.giveback-hero {
+  background: linear-gradient(135deg, rgb(241, 7, 144), #ff6b6b);
+  color: white;
+  padding: 100px 5%;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-family: var(--secondary-font);
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.donate-btn {
+  background: white;
+  color: rgb(241, 7, 144);
+}
+
+.donate-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.join-btn {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.join-btn:hover {
+  background: white;
+  color: rgb(241, 7, 144);
+  transform: translateY(-3px);
+}
+
+/* Mission & Vision */
+.mission-vision {
+  padding: 80px 5%;
+  background: #f8f8f8;
+}
+
+.mission-vision .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mission-card, .vision-card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.mission-card .icon, .vision-card .icon {
+  width: 80px;
+  height: 80px;
+  background: rgb(241, 7, 144);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 2rem;
+  color: white;
+}
+
+.mission-card h3, .vision-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: rgb(241, 7, 144);
+}
+
+.mission-card p, .vision-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* What We Do */
+.what-we-do {
+  padding: 80px 5%;
+  background: white;
+}
+
+.what-we-do .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.what-we-do h2 {
+  font-family: var(--secondary-font);
+  font-size: 3rem;
+  margin-bottom: 60px;
+  color: rgb(241, 7, 144);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.service-item {
+  padding: 30px;
+  background: #f8f8f8;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+}
+
+.service-item i {
+  font-size: 3rem;
+  color: rgb(241, 7, 144);
+  margin-bottom: 20px;
+}
+
+.service-item h4 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.service-item p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Gallery Section */
+.gallery-section {
+  padding: 80px 5%;
+  background: #f8f8f8;
+}
+
+.gallery-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-family: var(--secondary-font);
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: rgb(241, 7, 144);
+}
+
+.gallery-description {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+  transform: translateY(0);
+}
+
+/* Join Section */
+.join-section {
+  padding: 80px 5%;
+  background: white;
+}
+
+.join-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.join-section h2 {
+  font-family: var(--secondary-font);
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: rgb(241, 7, 144);
+}
+
+.join-description {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.join-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.join-card {
+  padding: 40px 30px;
+  background: #f8f8f8;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.join-card:hover {
+  transform: translateY(-10px);
+}
+
+.join-card i {
+  font-size: 3rem;
+  color: rgb(241, 7, 144);
+  margin-bottom: 20px;
+}
+
+.join-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.join-card p {
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.join-link {
+  display: inline-block;
+  padding: 12px 25px;
+  background: rgb(241, 7, 144);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.join-link:hover {
+  background: #000;
+  transform: translateY(-2px);
+}
+
+/* Final CTA */
+.final-cta {
+  padding: 80px 5%;
+  background: linear-gradient(135deg, rgb(241, 7, 144), #ff6b6b);
+  color: white;
+  text-align: center;
+}
+
+.final-cta h3 {
+  font-family: var(--secondary-font);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.final-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.final-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 40px;
+  background: white;
+  color: rgb(241, 7, 144);
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.final-cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .mission-vision .container {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-button {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+  
+  .what-we-do h2,
+  .gallery-section h2,
+  .join-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .giveback-hero {
+    padding: 60px 5%;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .mission-card, .vision-card {
+    padding: 30px 20px;
+  }
+}
