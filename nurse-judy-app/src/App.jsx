@@ -9,7 +9,7 @@ import Events from './pages/Events'
 import GivebackCircle from './pages/GivebackCircle'
 import About from './pages/About'
 import Footer from './components/Footer/Footer'
-import './styles/global.css'
+import './styles/globals.css'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
