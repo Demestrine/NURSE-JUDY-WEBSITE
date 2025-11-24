@@ -3,23 +3,23 @@ import React from 'react'
 const Gallery = () => {
   const galleryImages = [
     '/images/gallery/njk4.jpg',
-    '/images/gallery/njk6.jpg',
+    '/images/gallery/njk7.jpg',
     '/images/gallery/njk3.jpg',
-    '/images/gallery/njk9.jpg',
+    
     '/images/gallery/njk10.jpg',
     '/images/gallery/njk26.jpg',
-    '/images/gallery/njk1.jpg',
+    '/images/gallery/njk9.jpg',
     '/images/gallery/njk32.jpg',
     '/images/gallery/njk23.jpg',
-    '/images/gallery/njk18.jpg',
+    
     '/images/gallery/njk19.jpg',
     '/images/gallery/njk8.jpg',
-    '/images/gallery/njk21.jpg',
+  
     '/images/gallery/njk22.jpg',
     '/images/gallery/njk3.jpg',
     '/images/gallery/njk24.jpg',
     '/images/gallery/njk25.jpg',
-    '/images/gallery/njk2.jpg',
+    '/images/gallery/njk18.jpg',
     '/images/gallery/njk27.jpg',
     '/images/gallery/njk28.jpg',
     '/images/gallery/njk29.jpg',
