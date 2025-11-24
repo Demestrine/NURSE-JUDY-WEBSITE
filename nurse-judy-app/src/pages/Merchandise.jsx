@@ -4,7 +4,7 @@ const Merchandise = () => {
   const stanleyCups = [
     {
       name: "Nurse Pink Stanley Cup",
-      price: "$35.00",
+      price: "Ksh 1500.00",
       image: "/images/merchandise/stan1.jpg",
       whatsappMessage: "Hi%20Nurse%20Judy!%20I'm%20interested%20in%20the%20Classic%20Pink%20Stanley%20Cup"
     },
@@ -121,7 +121,7 @@ const Merchandise = () => {
   return (
     <section id="merchandise" className="dynamic-section active">
       <div className="section-header">
-        <h2>Our Merchandise</h2>
+        <h2>Merchandise</h2>
         <button className="close-section">
           <i className="fas fa-times"></i>
         </button>

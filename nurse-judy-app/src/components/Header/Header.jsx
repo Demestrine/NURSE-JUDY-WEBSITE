@@ -19,19 +19,35 @@ const Header = ({ activeSection, setActiveSection }) => {
     setIsMobileMenuOpen(false);
   };
 
+  // Show back button only when NOT on home page
+  const showBackButton = activeSection !== 'home';
+
   return (
     <header className="main-header">
-      {/* REMOVED: Welcome banner completely */}
-
-      {/* Main Navigation */}
       <nav className="main-nav">
-        {/* REMOVED: Nurse Judy logo completely */}
+        {/* Back button - only shows when not on home page */}
+        {showBackButton && (
+          <div 
+            className="back-button"
+            onClick={() => setActiveSection('home')}
+            title="Back to Home"
+          >
+            ← Back
+          </div>
+        )}
 
-        <div className="hamburger" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-          <i className="fas fa-bars"></i>
+        {/* Hamburger menu button */}
+        <div
+          className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
         </div>
 
-        <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`} id="navLinks">
+        {/* Desktop navigation - shows all items */}
+        <ul className="nav-links desktop-nav">
           {navItems.map(item => (
             <li key={item.id}>
               <a
@@ -47,6 +63,26 @@ const Header = ({ activeSection, setActiveSection }) => {
             </li>
           ))}
         </ul>
+
+        {/* Mobile dropdown menu */}
+        <div className={`mobile-dropdown ${isMobileMenuOpen ? 'active' : ''}`}>
+          <ul className="mobile-nav-links">
+            {navItems.map(item => (
+              <li key={item.id}>
+                <a
+                  href="#"
+                  className={`nav-link ${activeSection === item.id ? 'active' : ''}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavClick(item.id);
+                  }}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </nav>
     </header>
   );

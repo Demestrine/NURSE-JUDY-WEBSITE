@@ -1,8 +1,0 @@
-[build]
-  command = "cd nurse-judy-app && npm install && npm run build"
-  publish = "nurse-judy-app/dist"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200

@@ -12,19 +12,19 @@ const BottomInfo = () => {
     <section className="bottom-info">
       <div className="callouts">
         <div className="callout-item fade-in">
-          <h3>Fully Responsive</h3>
-          <h4>FITS EVERY SCREEN, EVERY STYLE</h4>
-          <p>From phone to desktop - seamless, sleek, and effortlessly you.</p>
+          <h3>Nursing Care</h3>
+          <h4>MINDFUL HEALTH </h4>
+          <p>Blending clinical expertise with compassionate support to guide your complete wellness journey with confidence and care.</p>
         </div>
         <div className="callout-item fade-in">
-          <h3>Amazing Client Support</h3>
-          <h4>ALWAYS IN TOUCH</h4>
-          <p>I'm here for you every step of the way, providing timely assistance and guidance whenever you need it.</p>
+          <h3>Dedicated Health Advocacy</h3>
+          <h4>YOUR WELLNESS COMPANION</h4>
+          <p>Always present with nurturing guidance and professional support for every step of your health and lifestyle transformation.</p>
         </div>
         <div className="callout-item fade-in">
-          <h3>Easy To Customize</h3>
-          <h4>MAKE IT YOUR OWN</h4>
-          <p>Tailor the experience to fit your unique style and preferences with ease.</p>
+          <h3>Individualized Care Experience</h3>
+          <h4>PERSONALIZED FOR YOUR PATH</h4>
+          <p>Custom health solutions and lifestyle adaptations crafted specifically for your unique wellness needs and life circumstances.</p>
         </div>
       </div>
       

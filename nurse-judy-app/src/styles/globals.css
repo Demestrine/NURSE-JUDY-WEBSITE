@@ -1540,8 +1540,278 @@ h2 {
     }
 }
 
+/* ... all your existing CSS ... */
+
 .banner-content > *,
 .content-sections > * {
     position: relative;
     z-index: 10;
-    }
+}
+
+/* Mobile Navigation - Dropdown Menu */
+@media (max-width: 768px) {
+  .main-nav {
+    justify-content: space-between;
+    padding: 12px 5%;
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  /* Hide desktop navigation on mobile */
+  .desktop-nav {
+    display: none !important;
+  }
+
+  /* Hamburger menu button */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Hamburger lines - BLACK */
+  .hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: #000000; /* Black color */
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+    display: block;
+  }
+
+  /* Hamburger animation */
+  .hamburger.active .hamburger-line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .hamburger.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .hamburger-line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  /* Mobile dropdown menu */
+  .mobile-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 1000;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .mobile-dropdown.active {
+    max-height: 500px;
+  }
+
+  .mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .mobile-nav-links li {
+    width: 100%;
+  }
+
+  /* Make navigation links BLACK */
+  .mobile-nav-links li a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000 !important; /* Black color */
+    text-decoration: none !important; /* Remove underline */
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+    text-align: left;
+    transition: all 0.3s ease;
+  }
+
+  .mobile-nav-links li a:hover {
+    background-color: rgba(241, 7, 144, 0.1);
+    color: rgb(241, 7, 144) !important; /* Pink on hover */
+  }
+
+  .mobile-nav-links li a.active {
+    background-color: rgb(241, 7, 144);
+    color: white !important; /* White for active state */
+  }
+
+  .mobile-nav-links li:last-child a {
+    border-bottom: none;
+  }
+}
+
+/* Desktop navigation - also make links black */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+  
+  .mobile-dropdown {
+    display: none !important;
+  }
+  
+  .desktop-nav {
+    display: flex !important;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* Make desktop navigation links black too */
+  .desktop-nav li a {
+    color: #000000 !important; /* Black color */
+    text-decoration: none !important; /* Remove underline */
+  }
+
+  .desktop-nav li a:hover {
+    color: #999 !important; /* Gray on hover */
+  }
+
+  .desktop-nav li a.active {
+    color: rgb(241, 7, 144) !important; /* Pink for active state */
+  }
+}
+/* Reduce heading sizes on mobile */
+@media (max-width: 768px) {
+  /* Main page headings */
+  h1 {
+    font-size: 32px !important;
+  }
+  
+  h2 {
+    font-size: 28px !important;
+  }
+  
+  h3 {
+    font-size: 22px !important;
+  }
+  
+  h4 {
+    font-size: 18px !important;
+  }
+  
+  /* Section headers in dynamic sections */
+  .section-header h2 {
+    font-size: 24px !important;
+  }
+  
+  .category-title {
+    font-size: 22px !important;
+  }
+  
+  .topic-header h3 {
+    font-size: 18px !important;
+  }
+  
+  .service-card h3 {
+    font-size: 22px !important;
+  }
+  
+  .mission-card h3 {
+    font-size: 18px !important;
+  }
+  
+  .event-title {
+    font-size: 18px !important;
+  }
+  
+  .product-name {
+    font-size: 16px !important;
+  }
+  
+  /* Hero banner headings */
+  .banner-content h1 {
+    font-size: 36px !important;
+  }
+  
+  .banner-content .subtitle {
+    font-size: 18px !important;
+  }
+  
+  .banner-content .description {
+    font-size: 14px !important;
+  }
+  
+  /* Content cards */
+  .content-card h3 {
+    font-size: 18px !important;
+  }
+  
+  .content-card p {
+    font-size: 14px !important;
+  }
+  
+  /* Feature items */
+  .feature-item h3 {
+    font-size: 13px !important;
+  }
+  
+  .feature-item p {
+    font-size: 12px !important;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px !important;
+  }
+  
+  h2 {
+    font-size: 24px !important;
+  }
+  
+  .banner-content h1 {
+    font-size: 28px !important;
+  }
+  
+  .section-header h2 {
+    font-size: 20px !important;
+  }
+}
+/* Back button styles */
+.back-button {
+  cursor: pointer;
+  padding: 8px 15px;
+  background-color: rgb(241, 7, 144);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.3s ease;
+  margin-right: 15px;
+  white-space: nowrap;
+}
+
+.back-button:hover {
+  background-color: rgb(241, 7, 144);
+  border-color: #ccc;
+}
+
+/* Mobile back button */
+@media (max-width: 768px) {
+  .back-button {
+    font-size: 12px;
+    padding: 6px 12px;
+    margin-right: 10px;
+  }
+}

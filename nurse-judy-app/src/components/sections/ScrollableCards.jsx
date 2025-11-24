@@ -38,7 +38,7 @@ const ScrollableCards = ({ onNavigate }) => {
     },
     {
       id: 'giveback',
-      image: '/images/gallery/njk31.jpg',
+      image: '/images/gallery/njk8.jpg',
       category: 'Community Support',
       title: 'GIVEBACK CIRCLE'
     },
